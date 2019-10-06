@@ -1,0 +1,10 @@
+.q-tag{
+    background-color: #c1f1f5;
+    color: #0313a6;
+
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+}

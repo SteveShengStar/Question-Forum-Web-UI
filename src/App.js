@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import QuestionItem from './QuestionItem';
 import './App.css';
+import questions from './data/data.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    questions.map(
+      (question) => <QuestionItem key={question.id} title={question.title} 
+      upVoteCount={question.upVoteCount}
+      answerCount={question.answerCount}
+      viewCount={question.viewCount}
+      tags={question.tags}
+      timestamp={question.timestamp}
+      user={question.user}
+      answered={question.answered}
+      ></QuestionItem>
+    )
   );
 }
-
 export default App;

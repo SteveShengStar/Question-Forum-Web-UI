@@ -1,0 +1,12 @@
+.stat-card{
+    text-align: center;
+    width: 65px;
+
+    padding: 11px 0 9px 0;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.success-bg{
+    background-color: green;
+    color: white;
+}

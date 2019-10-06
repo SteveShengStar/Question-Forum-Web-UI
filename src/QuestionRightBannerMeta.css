@@ -1,0 +1,12 @@
+.q-meta-container{
+    float: right;
+    position: relative;
+    top: 12px;
+}
+.q-meta-container > .q-meta-item{
+    padding-left: 8px;
+    font-size: 12px;
+}
+.q-meta-container > .q-meta-item:first-child{
+    color: gray;
+}
